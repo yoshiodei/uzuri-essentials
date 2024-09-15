@@ -19,7 +19,7 @@ module.exports = {
               dark: '',
             },
             secondary: {
-              DEFAULT: '',
+              DEFAULT: '#eadeed',
               light: '',
               dark: '',
             },

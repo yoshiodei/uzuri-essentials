@@ -1,20 +1,23 @@
 /* @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"); */
 @tailwind base;
-
-/* @layer base {
-  html {
-    @apply text-surface;
-    @apply bg-white;
-  }
-  html.dark {
-    @apply text-neutral-50;
-    @apply bg-body-dark;
-  }
-} */
-
 @tailwind components;
 @tailwind utilities;
 
-p {
+/* p {
   @apply leading-[1.6];
+} */
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
 }

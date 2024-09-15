@@ -1,10 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
+// import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Uzuri Essentials",
@@ -18,10 +13,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-background">
-        <Navbar />
+      <body>
         {children}
-        <Footer />
       </body>
     </html>
   );
