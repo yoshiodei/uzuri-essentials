@@ -9,9 +9,9 @@ export default function KenteCard({image}: {image:string}) {
   return (
     <button 
       className="rounded bg-white h-auto w-full p-2 flex flex-col items-between gap-y-2"
-      onClick={() => router.push('/product')}
+      onClick={() => router.push(`/product/kente/${image}`)}
     >
-      <div className="w-full rounded bg-primary-light h-[120px] border border-primary-light overflow-hidden">
+      <div className="w-full rounded bg-primary-light h-[100px] border border-primary-light overflow-hidden">
         <Image
           src={`/images/${image}`}
           alt="Kente Cloth"

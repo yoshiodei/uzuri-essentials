@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import React from 'react';
 
-export default function ProductCarousel() {
+export default function SheaButterCarousel() {
   useEffect(() => {
     const init = async () => {
       const { Carousel, initTWE } = await import("tw-elements");
@@ -34,7 +34,7 @@ export default function ProductCarousel() {
       aria-current="true"
       aria-label="Slide 1">
         <Image
-        src="/images/black_soapA1.png"
+        src="/images/shea_butter3.png"
         width={200}
         height={200}
         alt="Black soap" 
@@ -48,21 +48,7 @@ export default function ProductCarousel() {
       className="box-content overflow-hidden h-[40px] w-[40px] lg:h-[60px] lg:w-[60px] rounded-lg flex-initial cursor-pointer border border-2 border-primary bg-white bg-clip-padding p-0 -indent-[999px] transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
       aria-label="Slide 2">
         <Image
-        src="/images/black_soapA2.png"
-        width={200}
-        height={200}
-        alt="Black soap" 
-        className="block w-full h-full object-cover"
-        />
-      </button>
-    <button
-      type="button"
-      data-twe-target="#carouselExampleCrossfade"
-      data-twe-slide-to="2"
-      className="box-content overflow-hidden h-[40px] w-[40px] lg:h-[60px] lg:w-[60px] rounded-lg flex-initial cursor-pointer border border-2 border-primary bg-white bg-clip-padding p-0 -indent-[999px] transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-      aria-label="Slide 3">
-      <Image
-        src="/images/black_soapA3.png"
+        src="/images/shea_butterA1.jpeg"
         width={200}
         height={200}
         alt="Black soap" 
@@ -84,21 +70,14 @@ export default function ProductCarousel() {
         src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
         className="block w-full"
         alt="Wild Landscape" /> */}
-       <Image src="/images/black_soapA1.png" height={600} width={1000} className="block w-full h-[220px]" alt="black soap" />
+       <Image src="/images/shea_butter3.png" height={600} width={1000} className="block w-full h-[220px]" alt="black soap" />
     </div>
     {/* <!--Second item--> */}
     <div
       className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
       data-twe-carousel-fade
       data-twe-carousel-item>
-      <Image src="/images/black_soapA2.png" height={600} width={1000} className="block w-full h-[220px]" alt="black soap" />
-    </div>
-    {/* <!--Third item--> */}
-    <div
-      className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-      data-twe-carousel-fade
-      data-twe-carousel-item>
-      <Image src="/images/black_soapA3.png" height={600} width={1000} className="block w-full h-[220px]" alt="black soap" />
+      <Image src="/images/shea_butterA1.jpeg" height={600} width={1000} className="block w-full h-[220px]" alt="black soap" />
     </div>
   </div>
 
@@ -158,3 +137,4 @@ export default function ProductCarousel() {
     </div>
   )
 }
+

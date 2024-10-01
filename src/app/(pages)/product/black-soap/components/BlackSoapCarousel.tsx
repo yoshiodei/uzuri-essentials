@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import React from 'react';
 
-export default function ProductCarousel() {
+export default function BlackSoapCarousel() {
   useEffect(() => {
     const init = async () => {
       const { Carousel, initTWE } = await import("tw-elements");
