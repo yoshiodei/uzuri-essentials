@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function BenefitSection() {
     return (
-        <div className="px-5 pt-8 relative w-full h-[43vh] overflow-hidden py-5 bg-white">
+        <div className="px-5 pt-8 relative w-full h-[50vh] overflow-hidden py-5 bg-white">
           <h2 className="mb-3 text-primary text-[1.2em] text-center leading-tight font-semibold">
             Experience the natural power of African Black Soap.
           </h2>

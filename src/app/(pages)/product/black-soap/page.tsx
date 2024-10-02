@@ -5,8 +5,10 @@ import BlackSoapCarousel from './components/BlackSoapCarousel';
 export default function BlackSoapProducts() {
   return (
     <main className="min-h-[80vh] py-[15px] lg:py-8">
-      <BlackSoapCarousel />
-      <div className="px-[15px] lg:px-[150px] flex flex-col gap-y-2 lg:gap-y-5 mt-3 lg:mt-0">
+      <div>
+        <BlackSoapCarousel />
+      </div>
+      <div className="px-[15px] lg:px-[150px] flex flex-col gap-y-2 lg:gap-y-5 mt-10 lg:mt-0">
         <div>
           <h6 className="text-lg lg:text-xl font-bold text-primary lg:mb-1">Price</h6>   
           <h2 className="text-2xl lg:text-3xl font-bold text-slate-600">Ghc 123.00</h2>   

@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function VarietySection() {
   return (
-    <div className="px-5 pt-8 relative w-full h-[37vh] overflow-hidden py-5 bg-white">
+    <div className="px-5 pt-8 relative w-full h-[42vh] overflow-hidden py-5 bg-white">
       <h2 className="mb-3 text-primary text-[1.2em] text-center leading-tight font-semibold">
         Never run out of inspiration for styling your kente.
       </h2>
@@ -16,7 +16,7 @@ export default function VarietySection() {
         alt="Kente Designs"
         height={900}
         width={1200}
-        className="absolute z-20 w-auto h-[17vh] bottom-[0px] right-0"
+        className="absolute z-20 w-[100%] h-auto bottom-[0px] right-0"
       />
     </div>    
   )
