@@ -1,37 +1,26 @@
-'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import { GiRolledCloth } from "react-icons/gi";
 import { FaSoap } from "react-icons/fa6";
 import { SiRoundcube } from "react-icons/si";
 import { IoClose } from "react-icons/io5";
 import { useRouter } from 'next/navigation';
-import { App_Name } from '../config'
 
-export default function Navbar() {
-  
-  const [toggleNav, setToggleNav] = useState(false);
+type ToggleProps = {
+    toggleNav: boolean;
+    setToggleNav: React.Dispatch<React.SetStateAction<boolean>>;
+  };
 
+export default function MenuSlider({ setToggleNav, toggleNav }: ToggleProps) {
   const router = useRouter();
+
+  
   const navigatePage = (page: string): void => {
     setToggleNav(false);
     router.push(page);
   };  
 
   return (
-    <nav className="bg-primary w-full h-[10vh] px-[15px] lg:px-[100px] flex items-center justify-between relative">
-      <div className="w-full xl:w-[1400px]">
-        <h1 className="text-font-light lg:text-3xl text-xl font-bold">{App_Name}</h1>    
-      </div>
-      <button
-        onClick={() => setToggleNav(true)}
-        className="flex flex-col gap-y-2 items-center justify-center"
-      >
-        <div className="rounded-full h-[3px] w-[40px] bg-white" />
-        <div className="rounded-full h-[3px] w-[40px] bg-white" />
-        <div className="rounded-full h-[3px] w-[40px] bg-white" />
-      </button>
-
-      <div className={`absolute top-0 right-0 transition transition-transform duration-300 ease-in-out w-[100vw] p-5 h-[100vh] bg-primary-light ${toggleNav ? 'translate-x-0' : 'translate-x-full'} top-0 z-30`}>
+    <div className={`absolute transition-all p-5 w-[100vw] h-[0vh] bg-primary-light ${toggleNav ? 'right-0' : 'right-[-105vw]'} top-0 z-30 flex flex-col gap-y-5`}>
         <div className="flex justify-end">
           <button
             onClick={() => setToggleNav(false)}
@@ -59,6 +48,5 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-    </nav>
   )
 }
