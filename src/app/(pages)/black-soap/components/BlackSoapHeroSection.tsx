@@ -20,12 +20,12 @@ const BlackSoapHeroSection: React.FC<CollectionSectionProps> = ({ collectionRef 
         <button onClick={() => handleScroll()} className="rounded bg-primary text-white text-lg font-semibold px-3 py-[5px] w-[170px] h-[38px] mt-3">Explore</button>
       </div>
       <Image
-        src="/images/black_soap.png"
+        src="/images/hand_with_black_soap.png"
         // src="/next.svg"
         alt="African black soap"
         height={500}
         width={200}
-        className="absolute w-auto h-[44vh] z-20 bottom-[20px] right-[0px]"
+        className="absolute w-auto h-[40vh] z-20 bottom-[0px] right-[13vw]"
         />
     </div>
   )
