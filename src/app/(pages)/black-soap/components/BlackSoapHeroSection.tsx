@@ -25,7 +25,7 @@ const BlackSoapHeroSection: React.FC<CollectionSectionProps> = ({ collectionRef 
         alt="African black soap"
         height={500}
         width={200}
-        className="absolute w-auto h-[40vh] z-20 bottom-[0px] right-[13vw]"
+        className="absolute left-1/2 transform -translate-x-1/2 w-auto h-[40vh] z-20 bottom-[0px]"
         />
     </div>
   )

@@ -27,7 +27,7 @@ const KenteHeroSection: React.FC<CollectionSectionProps> = ({ collectionRef }) =
           alt="Lady in Beautiful Kente Fabric"
           height={420}
           width={220}
-          className="absolute w-auto h-[44vh] z-20 bottom-[0px] right-[15vw]"
+          className="absolute w-auto h-[44vh] bottom-[0px] absolute left-1/2 transform -translate-x-1/2 z-20 bottom-[0px]"
         />
     </div>
   )
