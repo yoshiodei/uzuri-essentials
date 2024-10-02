@@ -18,7 +18,7 @@ export default function Navbar() {
   };  
 
   return (
-    <nav className="bg-primary w-full h-[10vh] px-[15px] lg:px-[100px] flex items-center justify-between relative">
+    <nav className="bg-primary w-[100vw] h-[10vh] px-[15px] lg:px-[100px] flex items-center justify-between relative">
       <div className="w-full xl:w-[1400px]">
         <h1 className="text-font-light lg:text-3xl text-xl font-bold">{App_Name}</h1>    
       </div>
@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="rounded-full h-[3px] w-[40px] bg-white" />
       </button>
 
-      <div className={`absolute top-0 right-0 transition transition-transform duration-300 ease-in-out w-[100vw] p-5 h-[100vh] bg-primary-light ${toggleNav ? 'translate-x-0' : 'translate-x-full'} top-0 z-30`}>
+      <span className={`absolute top-0 right-0 transition transition-transform duration-300 ease-in-out w-[100vw] p-5 h-[100vh] bg-primary-light ${toggleNav ? 'translate-x-0' : 'translate-x-full'} top-0 z-30`}>
         <div className="flex justify-end">
           <button
             onClick={() => setToggleNav(false)}
@@ -58,7 +58,7 @@ export default function Navbar() {
             <p className="text-white text-[1.4em] font-semibold">Shea Butter</p>
           </button>
         </div>
-      </div>
+      </span>
     </nav>
   )
 }

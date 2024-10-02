@@ -20,7 +20,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className="bg-background relative min-h-screen w-screen overflow-hidden">
+      <body className="bg-background relative">
         <Navbar />
         <div className="w-full flex justify-center">
           <div className="w-full xl:w-[1400px]">
