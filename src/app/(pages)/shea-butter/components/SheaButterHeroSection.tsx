@@ -13,7 +13,7 @@ const SheaButterHeroSection: React.FC<CollectionSectionProps> = ({ collectionRef
     };
   
     return (
-      <div className="px-5 pt-5 h-[78vh] bg-[url('/images/adinkra-bg2.png')] bg-cover bg-center relative overflow-hidden">
+      <div className="px-5 pt-5 h-screen bg-[url('/images/adinkra-bg2.png')] bg-cover bg-center relative overflow-hidden">
         <div className="flex flex-col gap-y-2">  
           <h2 className="text-primary font-extrabold text-[2em] leading-tight">Nourish Your Skin with Every Touch.</h2>
           <p className="text-[0.95em] font-bold text-slate-600 w-[80vw] leading-tight">Your skin deserves the best. Nurture your skin with the richness of pure Shea Butter</p>
@@ -25,7 +25,7 @@ const SheaButterHeroSection: React.FC<CollectionSectionProps> = ({ collectionRef
           alt="Person holding shea butter"
           height={500}
           width={200}
-          className="absolute w-auto h-[52vh] z-20 bottom-0 left-0"
+          className="absolute w-auto h-[48vh] z-20 bottom-0 left-0"
           />
       </div>
     )

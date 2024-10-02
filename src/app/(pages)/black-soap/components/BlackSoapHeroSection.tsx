@@ -13,7 +13,7 @@ const BlackSoapHeroSection: React.FC<CollectionSectionProps> = ({ collectionRef 
   };
 
   return (
-    <div className="px-5 pt-5 h-[78vh] bg-[url('/images/adinkra-bg2.png')] bg-cover bg-center relative overflow-hidden">
+    <div className="px-5 pt-5 h-screen bg-[url('/images/adinkra-bg2.png')] bg-cover bg-center relative overflow-hidden">
       <div className="flex flex-col gap-y-2">  
         <h2 className="text-primary font-extrabold text-[2em] leading-tight">Experience the Purity of Nature.</h2>
         <p className="text-[0.95em] font-bold text-slate-600 w-[80vw] leading-tight">Our African Black Soap is made from natural ingredients sourced directly from the rich soils of West Africa.</p>

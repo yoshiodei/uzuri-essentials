@@ -15,7 +15,7 @@ const KenteHeroSection: React.FC<CollectionSectionProps> = ({ collectionRef }) =
   };
 
   return (
-    <div className="px-5 pt-5 h-[78vh] bg-[url('/images/adinkra-bg2.png')] bg-cover bg-center relative overflow-hidden">
+    <div className="px-5 pt-5 h-screen bg-[url('/images/adinkra-bg2.png')] bg-cover bg-center relative overflow-hidden">
       <div className="flex flex-col gap-y-2">  
         <h2 className="text-primary font-extrabold text-[2em] leading-tight">Wrap Yourself in Tradition</h2>
         <p className="text-[0.95em] font-bold text-slate-600 w-[300px] leading-tight">Shop the finest Kente fabrics, crafted with centuries-old techniques for your modern lifestyle.</p>
@@ -27,7 +27,7 @@ const KenteHeroSection: React.FC<CollectionSectionProps> = ({ collectionRef }) =
           alt="Lady in Beautiful Kente Fabric"
           height={420}
           width={220}
-          className="absolute w-auto h-[48vh] z-20 bottom-[0px] right-[50px]"
+          className="absolute w-auto h-[46vh] z-20 bottom-[0px] right-[50px]"
         />
     </div>
   )
